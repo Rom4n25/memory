@@ -1,6 +1,13 @@
 import { StyledMain } from "./styles/Main";
+import CardContainer from "./CardContainer";
+import Stats from "./Stats";
 
 const Main = () => {
-  return <StyledMain>Main</StyledMain>;
+  return (
+    <StyledMain>
+      <Stats />
+      <CardContainer />
+    </StyledMain>
+  );
 };
 export default Main;
