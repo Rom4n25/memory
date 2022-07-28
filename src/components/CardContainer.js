@@ -1,19 +1,12 @@
 import { StyledCardContainer } from "./styles/CardContainer";
 import Card from "./Card";
 
-const CardContainer = () => {
+const CardContainer = ({ cards, shuffleCards }) => {
   return (
     <StyledCardContainer>
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
-      <Card />
+      {cards.map((card) => (
+        <Card key={card} id={card} shuffleCards={shuffleCards} />
+      ))}
     </StyledCardContainer>
   );
 };

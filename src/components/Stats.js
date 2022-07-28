@@ -1,6 +1,11 @@
 import { StyledStats } from "./styles/Stats";
 
-const Stats = () => {
-  return <StyledStats></StyledStats>;
+const Stats = ({ points, record }) => {
+  return (
+    <StyledStats>
+      <p>Record: {record}</p>
+      <p>Points: {points}</p>
+    </StyledStats>
+  );
 };
 export default Stats;

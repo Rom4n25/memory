@@ -5,4 +5,8 @@ export const StyledCard = styled.div`
   width: 250px;
   height: 250px;
   border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
