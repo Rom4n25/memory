@@ -2,8 +2,8 @@ import { StyledCard } from "./styles/Card";
 
 const Card = ({ id, selectCard }) => {
   return (
-    <StyledCard id={id} onClick={(e) => selectCard(e)}>
-      {id}
+    <StyledCard onClick={(e) => selectCard(e)}>
+      <img id={id} src={require(`../img/${id}.png`)} alt="img"></img>
     </StyledCard>
   );
 };
