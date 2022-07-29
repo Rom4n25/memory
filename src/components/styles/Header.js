@@ -9,4 +9,5 @@ export const StyledHeader = styled.header`
   align-items: center;
   color: #ffa700;
   padding-top: 15px;
+  opacity: 0.95;
 `;

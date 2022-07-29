@@ -15,4 +15,5 @@ export const StyledStats = styled.div`
   color: #ffa700;
   font-size: 28px;
   padding: 15px;
+  opacity: 0.95;
 `;

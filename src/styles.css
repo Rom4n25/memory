@@ -4,6 +4,7 @@
   }
 
 body{
-    background-color: #eeba30;
     font-family: "MyFont";
+    cursor: default;
+    background: url("/src/img/background.jpg") no-repeat center center fixed;
 }
