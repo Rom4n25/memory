@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const StyledCardContainer = styled.div`
   display: grid;
-  gap: 40px;
+  grid-gap: 20px;
   background: #740001;
-  padding: 40px;
-  grid-template-columns: repeat(auto-fill, 270px);
+  padding: 50px;
+  grid-template-columns: repeat(auto-fill, 180px);
   justify-items: center;
   justify-content: space-around;
   align-items: stretch;

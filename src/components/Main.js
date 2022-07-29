@@ -12,8 +12,8 @@ const Main = () => {
   const shuffleCards = () => {
     const list = [];
 
-    while (list.length < 10) {
-      let randomNumber = Math.floor(Math.random() * 10);
+    while (list.length < 16) {
+      let randomNumber = Math.floor(Math.random() * 16);
       if (!list.includes(randomNumber)) list.push(randomNumber);
     }
 
@@ -22,7 +22,7 @@ const Main = () => {
 
   const selectCard = (e) => {
     if (uniqueCards.includes(e.target.id)) {
-      setPoints(0);
+      setPoints(1);
       setUniqueCards([]);
     } else {
       uniqueCards.push(e.target.id);
