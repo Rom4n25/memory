@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./font/parry-hotter.regular.woff) format('woff');
+  }
+
+body{
+    background-color: #eeba30;
+    font-family: "MyFont";
+}

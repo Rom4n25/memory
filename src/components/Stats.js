@@ -3,8 +3,8 @@ import { StyledStats } from "./styles/Stats";
 const Stats = ({ points, record }) => {
   return (
     <StyledStats>
-      <p>Record: {record}</p>
-      <p>Points: {points}</p>
+      <div>Record: {record}</div>
+      <div> Points: {points}</div>
     </StyledStats>
   );
 };
