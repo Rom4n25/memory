@@ -1,8 +1,8 @@
 import { StyledCard } from "./styles/Card";
 
-const Card = ({ id, shuffleCards }) => {
+const Card = ({ id, selectCard }) => {
   return (
-    <StyledCard id={id} onClick={() => shuffleCards()}>
+    <StyledCard id={id} onClick={(e) => selectCard(e)}>
       {id}
     </StyledCard>
   );

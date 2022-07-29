@@ -20,6 +20,20 @@ const Main = () => {
     setCards(list);
   };
 
+  const selectCard = (e) => {
+    if (uniqueCards.includes(e.target.id)) {
+      setPoints(0);
+      setUniqueCards([]);
+    } else {
+      uniqueCards.push(e.target.id);
+      setPoints(uniqueCards.length);
+      if (uniqueCards.length > record) {
+        setRecord(uniqueCards.length);
+      }
+    }
+    shuffleCards();
+  };
+
   useEffect(() => {
     shuffleCards();
   }, []);
@@ -27,7 +41,7 @@ const Main = () => {
   return (
     <StyledMain>
       <Stats points={points} record={record} />
-      <CardContainer cards={cards} shuffleCards={shuffleCards} />
+      <CardContainer cards={cards} selectCard={selectCard} />
     </StyledMain>
   );
 };
