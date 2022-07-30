@@ -13,7 +13,7 @@ export const StyledStats = styled.div`
   margin-bottom: 30px;
   border-radius: 20px;
   color: #ffa700;
-  font-size: 28px;
+  font-size: 30px;
   padding: 15px;
   opacity: 0.95;
 `;

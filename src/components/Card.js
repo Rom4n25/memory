@@ -7,8 +7,8 @@ const Card = ({ id, selectCard }) => {
         id={id}
         src={require(`../img/${id}.png`)}
         alt="img"
-        width="140"
-        height="140"
+        width="160"
+        height="160"
       ></img>
     </StyledCard>
   );

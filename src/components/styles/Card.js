@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
-  border: 5px #ffa700 solid;
+  border: 3px #ffa700 solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
